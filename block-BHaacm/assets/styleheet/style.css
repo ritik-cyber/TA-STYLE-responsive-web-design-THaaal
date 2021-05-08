@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom style */
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 16px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+:root {
+  --header: #222946;
+  --text: #a3a3a5;
+  --heading: #090c17;
+  --btn: #37b667;
+  --section: #e9ecfc;
+}
+a {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+}
+.justify-content {
+  justify-content: space-between;
+}
+.align-item {
+  align-items: center;
+}
+.flex-48 {
+  flex: 0 1 48%;
+  margin: 1%;
+}
+.flex-30 {
+  flex: 0 1 33%;
+  margin: 2%;
+}
+.padding {
+  padding: 4rem 0;
+}
+.width-full {
+  width: 100%;
+}
+.btn {
+  background-color: var(--btn);
+  padding: 1rem 1.3rem;
+  color: #fff;
+  display: inline-block;
+}
+/* header */
+.header {
+  background-color: var(--header);
+  width: 100%;
+  padding: 1.5rem 0;
+}
+.nav a {
+  color: #fff;
+  margin-right: 1.4rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.nav .active {
+  color: var(--btn);
+}
+
+/* section-heading */
+.section {
+  background-color: var(--section);
+  width: 100%;
+}
+.section-heading h1 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 0.7rem;
+}
+.section-heading p {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin-bottom: 0.7rem;
+}
+.section-heading a {
+  text-transform: capitalize;
+  border-radius: 0.2rem;
+}
+/* section */
+.heading h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--heading);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.gallery h1 {
+  color: var(--heading);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+.gallery p {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+.gallery a {
+  text-transform: capitalize;
+  border-radius: 0.2rem;
+}
+/* footer */
+.footer {
+  background-color: #222946;
+  padding: 1.5rem;
+}
+.footer,
+small {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.footer a {
+  font-size: 1.3rem;
+  color: var(--text);
+  margin-right: 0.7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .flex-48,
+  .flex-30 {
+    flex: 0 1 100%;
+  }
+  .container {
+    width: 98%;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+  .icon {
+    display: block;
+    margin-top: 0.6rem;
+  }
+  .footer .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  /* .section .container {
+    position: relative;
+    height: 500px;
+  }
+  .section-heading {
+    position: absolute;
+    bottom: 0;
+  }
+  .section-img {
+    position: absolute;
+    top: 0;
+  } */
+  .header .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .section .container {
+    display: grid;
+    grid-template:
+      "b"
+      "a";
+  }
+  .section-heading {
+    grid-area: a;
+  }
+  .section-img {
+    grid-area: b;
+  }
+}
