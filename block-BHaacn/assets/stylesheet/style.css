@@ -1,0 +1,630 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom style */
+body {
+  font-family: "Nunito", sans-serif;
+}
+:root {
+  --btn: #f9234d;
+  --heading: #01122d;
+  --footer: #23347b;
+  --ground: #102169;
+  --section: #dfecff;
+}
+html {
+  font-size: 16px;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.height {
+  height: 100%;
+}
+.width-full {
+  width: 100%;
+}
+.padding {
+  padding: 5rem 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* flex classes */
+.flex {
+  display: flex;
+}
+.justify-content {
+  justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-item {
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.flex-70 {
+  flex: 0 1 60%;
+}
+.flex-48 {
+  flex: 0 1 48%;
+  margin: 1%;
+}
+.flex-15 {
+  flex: 0 1 12%;
+}
+.flex-30 {
+  flex: 0 1 30%;
+  margin: 2%;
+}
+.flex-24 {
+  flex: 0 1 18%;
+}
+/* button class */
+.btn {
+  background-color: var(--btn);
+  color: #fff;
+  padding: 0.7rem 1.7rem;
+  text-transform: capitalize;
+  display: inline-block;
+  border-radius: 0.2rem;
+}
+.btn:hover {
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+/* header */
+.header {
+  padding: 1.3rem 0;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  width: 100%;
+}
+.heading h1 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar a {
+  margin-right: 1.4rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+/* section-bg */
+.bg {
+  background: url(../banner.png),
+    linear-gradient(rgba(53, 37, 170, 0.5), rgba(53, 37, 170, 0.5)), no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.hero-section h1 {
+  font-size: 4.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.span-color {
+  color: var(--btn);
+}
+.hero-section p {
+  color: #fff;
+  line-height: 1.3;
+  font-size: 1.4rem;
+  margin: 2.5rem 0;
+}
+
+/* about section */
+.about-section {
+  padding-left: 4rem;
+}
+.about-section h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--heading);
+  font-weight: 600;
+}
+.about-section p {
+  font-size: 1rem;
+  color: grey;
+  line-height: 1.4;
+  margin: 1.6rem 0;
+}
+/* 3rd section */
+.thrd-section {
+  background-color: var(--section);
+  padding: 3rem 0;
+  margin-top: 2.6rem;
+}
+.h1-head {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.border {
+  border: 2px dashed var(--btn);
+  padding: 1rem;
+}
+.border h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.border p {
+  color: grey;
+  line-height: 1.3;
+  margin-top: 0.6rem;
+}
+/* section */
+
+.circle {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: var(--btn);
+}
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 3.5rem;
+}
+
+.shedule-heading h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: var(--heading);
+}
+.shedule-heading p {
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.shedule-img {
+  border-radius: 0.4rem;
+}
+.margin-bottom {
+  margin-bottom: 3.5rem;
+}
+.circle-1 {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.circle-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--btn);
+  font-size: 2rem;
+  border: 2px dashed;
+  font-weight: 700;
+  margin-left: 3.5rem;
+}
+.btn-center {
+  text-align: center;
+}
+/* mike section */
+.mike {
+  text-align: center;
+}
+
+.mike h1 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0.7rem 0;
+}
+.mike p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.active {
+  background-color: var(--btn);
+  padding: 1rem 0;
+  border-radius: 0.4rem;
+  color: #fff;
+}
+.active p {
+  font-weight: 200;
+}
+.margin-top {
+  margin-top: 3rem;
+}
+.position {
+  position: relative;
+}
+.play-btn {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.play-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--btn);
+}
+.icon {
+  font-size: 3rem;
+}
+
+/* news heading */
+.news-heading h1 {
+  color: var(--heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+.news-heading p {
+  color: grey;
+  line-height: 1.5;
+  margin: 0.8rem 0;
+}
+.news-heading a {
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: var(--heading);
+}
+.news-heading .active-news {
+  color: var(--btn);
+}
+
+.thrd-section-1 {
+  background-color: var(--section);
+  padding: 3rem 0 9rem 0;
+  margin-top: 2.6rem;
+}
+/* last section */
+.last-section {
+  background-color: var(--footer);
+  padding: 2rem 0;
+}
+.last-section-links {
+  margin-right: 8rem;
+}
+.last-section-links h1 {
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.last-section-links a {
+  color: #79819f;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.last-icon h2 {
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.last-icon {
+  margin-right: 20rem;
+}
+.last-icon a {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+/* footer */
+.footer {
+  background-color: var(--ground);
+  padding: 1.5rem 0;
+}
+.footer p {
+  text-align: center;
+  color: #b1b4bf;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .flex-100 {
+    flex: 0 1 100%;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .flex-50 {
+    flex: 0 1 50%;
+  }
+  .media-width {
+    width: 100%;
+  }
+  .display {
+    display: flex;
+    justify-content: space-between;
+  }
+  .block {
+    display: block;
+  }
+}
